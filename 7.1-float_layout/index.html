@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1/0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="About me">
+   <meta name="keywords" content="web dev an design">
+   <title>float </title>
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         background-color: rgb(203, 211, 161);
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .clr {
+         clear: both;
+      }
+
+      .card {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         transition: 0.3s;
+         width: 20%;
+      }
+
+      .card:hover {
+         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      #footer {
+         background-color: rgb(168, 161, 211);
+         width: 100%;
+         float: down;
+      }
+
+      #side {
+         background-color: #ebcece;
+         color: rgb(97, 165, 42);
+      }
+
+      .some {
+         background-color: #ebcece;
+         color: brown;
+      }
+
+      .new {
+         background-color: blueviolet;
+         color: darkblue;
+      }
+
+      #main {
+         text-shadow: 0.1rem 0.1rem rgb(34, 29, 29);
+
+         text-align: center;
+         text-align: justify;
+      }
+
+      #main p {
+         background-color: rgb(211, 161, 169);
+         height: 300px;
+      }
+
+      #pic {
+
+         border: 1 px solid purple;
+         height: 200px;
+
+         padding: 1rem;
+         margin: 1rem;
+         box-shadow: -5px -5px 20px teal;
+      }
+
+      #pic:hover {
+         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      #main {
+         float: left;
+         width: 68%;
+      }
+
+      #side {
+
+         float: right;
+         width: 30%;
+      }
+   </style>
+</head>
+
+<body>
+
+   <!-- header -->
+   <div id="main-header" class="some">
+      <p id=main>
+      <h1>
+         Lorem ipsum dolor sit amet consectetur.
+      </h1>
+      </p>
+      <h2>
+         Lorem, ipsum dolor.
+      </h2>
+   </div>
+
+   <!-- main -->
+   <div id="main" class="some">
+      <p>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, doloremque! Veritatis voluptate unde eligendi
+         consectetur. Et non autem consequatur facilis officia esse illo? Cum magnam ipsa iste voluptates. Beatae fugit
+         voluptatibus, aperiam rem inventore suscipit? Ipsa provident aspernatur maiores? Tempora distinctio nobis,
+         consequuntur perferendis esse neque nesciunt velit obcaecati dignissimos repellat illum consequatur enim
+         molestiae repudiandae animi explicabo iste fuga nostrum repellendus rem numquam reprehenderit. Ratione, placeat
+         ullam sit consequatur necessitatibus, repudiandae repellendus nam ex laborum veritatis similique. Ab et facere
+         enim, voluptate consectetur suscipit molestias quas iusto ad eum repellat laudantium vitae ipsam cupiditate
+         quia dolorem reprehenderit voluptas in odio, explicabo laborum labore. Provident rem non aut, ea consequatur
+         nemo perspiciatis nobis libero, architecto ab sed aliquid porro neque tenetur ad assumenda, atque ducimus quos
+         voluptatem. Ut, consequatur nisi?
+      </p>
+   </div>
+
+   <!-- side -->
+   <div id="side" class="card">
+      <img src="images/is.jfif" alt="cat" width="90" height="90">
+      <div class="container">
+         <h4><b>Cat Hatuli</b></h4>
+         <p>a little bit crazy & but sweeter</p>
+      </div>
+   </div>
+   <div class="clr">
+   </div>
+
+   <!-- footer -->
+   <div id="footer" class="some">
+      <ul>
+         <li>
+            <img src="images/linkedin.jfif" width="20" height="20">
+         </li>
+         <li>
+            <img src="images/facebook.png" width="20" height="20">
+         </li>
+      </ul>
+   </div>
+
+</body>
+
+</html>
