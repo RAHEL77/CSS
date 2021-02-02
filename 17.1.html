@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=a">
+    <title>17-1</title>
+    <style>
+        a {
+            font-size: 2em;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        a::after {
+            content: ' (www.google.com) ';
+            color: red;
+        }
+        
+        a::before {
+            content: 'For google site';
+            color: rgb(16, 34, 19);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            <a href="https://www.google.co.il/">  &nbsp; click &nbsp; </a>
+        </p>
+    </div>
+</body>
+
+</html>
