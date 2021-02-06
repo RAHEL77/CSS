@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            color: black;
+            background: lightgray;
+        }
+        
+        .header {
+            padding: 1em 1em;
+            background: gray;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+        
+        ul li {
+            padding: 0 1rem;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            color: blue;
+        }
+        /*Media*/
+        /*phone*/
+        /*לבדוק למה לא עובד*/
+        
+        @media(max-width:500px) {
+            .header {
+                display: flex;
+                flex-direction: columns;
+                align-items: center;
+            }
+        }
+        /*tablet*/
+        
+        @media(max-width: 768px) {
+            .header {
+                display: flex;
+                flex-direction: columns;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"><a href="#">APPLESEEDS</a></div>
+        <ul class="main-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PORTFILO</a></li>
+            <li><a href="#">CONTACT</a></li>
+
+
+        </ul>
+    </div>
+</body>
+
+</html>

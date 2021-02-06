@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: lightblue;
+            color: rgb(17, 8, 8);
+            line-height: 1.8;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .container {
+            margin: 30px auto;
+            max-width: 400px;
+            padding: 20px;
+        }
+        
+        .form-wrap {
+            background: white;
+            padding: 15px 25px;
+        }
+        
+        .form-wrap h1,
+        .form-wrap p {
+            text-align: center;
+        }
+        
+        .form-wrap .form-details {
+            margin-top: 15px;
+        }
+        
+        .form-wrap .form-details label {
+            display: block;
+            color: tomato;
+        }
+        
+        .form-wrap .form-details input {
+            width: 100%;
+            padding: 10px;
+            border: rgb(133, 9, 9) 1px solid;
+            border-radius: 5px;
+        }
+        
+        .form-wrap button {
+            display: block;
+            background: tomato;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        
+        .form-wrap button:hover {
+            background: red;
+        }
+        
+        .form-wrap .bottom-text {
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        footer a {
+            color: rgb(135, 71, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrap">
+            <h1>Sign Up</h1>
+            <p>Its free and takes just few minutes</p>
+            <form>
+                <div class="form-details">
+                    <label for="first_name">First name</label>
+                    <input type="text" name="first_name" id="first_name" />
+                </div>
+                <div class="form-details">
+                    <label for="last_name">Last name</label>
+                    <input type="text" name="last_name" id="last_name" />
+                </div>
+                <div class="form-details">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-details">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <div class="form-details">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <div class="form-details">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="buttom-text">
+                    By Clicking the Sign Up button you agree to our
+                    <a href="#">Terms and Conditions</a> and
+                    <a href="Privacy Policy"></a>
+                </p>
+            </form>
+        </div>
+        <footer>
+            <p>Already have an account?
+                <a href="#">Login Here</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

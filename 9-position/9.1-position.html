@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1/0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="About me">
+    <meta name="keywords" content="web dev an design">
+    <title>9.1positioning</title>
+
+    <!-- relative-> tblr values cause element to be moved from its normal posi
+    absolute -> positioned relative to its parent element that is positioned "relative"
+    fixed->positined relative to the viewport
+    sticky -> posiyioned based on scroll posiyion -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+       body{
+           height: 4000px;
+       }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .contanier{
+            position:relative;
+            height: 500px;
+            width: 500;
+            background: black;
+            z-index: 2;
+        
+        }
+        #box-1 {
+            top:50px; left:50px;
+            position: relative;
+            background: red;
+            z-index: 1;
+        }
+        
+        #box-2 {
+            position: absolute;
+
+            background: rgb(111, 0, 255);
+            top: 100px;
+            left: 100px;
+        }
+        
+        #box-3 {
+            position: absolute;
+
+            bottom: 100px;
+            right: 100px;
+            background: rgb(0, 255, 34);
+        }
+        
+        #box-4 {
+            position: fixed;
+            background: rgb(217, 255, 0);
+        }
+        
+        #box-5 {
+            position: sticky;
+            top:0;
+            background: rgb(14, 7, 7);
+            z-index: -1;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="box-1" class="box"></div>
+    <div class="contanier">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+</body>
+
+</html>

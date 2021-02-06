@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>12-3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            border: solid 1px black;
+        }
+        
+        .box {
+            background: rgb(147, 210, 30);
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        .header {
+            /** why we dont need height**/
+            /*   height: 100px;*/
+            border: solid 1px black;
+            background: orange;
+            text-align: center;
+            margin: 2px;
+        }
+        
+        .side {
+            float: left;
+            border: solid 1px black;
+            background: green;
+            text-align: left;
+            padding-bottom: 15px;
+            width: 30%;
+            height: 300px;
+            margin: 2px;
+        }
+        
+        .main {
+            float: right;
+            border: solid 1px black;
+            background: purple;
+            text-align: right;
+            padding-bottom: 15px;
+            width: 67%;
+            height: 300px;
+            margin: 2px;
+        }
+        
+        .clr {
+            clear: both;
+        }
+        
+        .footer {
+            /** why we dont need height**/
+            /*   height: 100px;*/
+            border: solid 1px black;
+            background: rgba(17, 17, 121, 0.473);
+            text-align: center;
+            margin: 2px;
+        }
+        
+        .text {
+            margin: 20px;
+        }
+        
+        @media(max-width: 768px) {
+            .side {
+                display: none;
+            }
+            .main {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="header">
+                <div class="text"><span>Header</span></div>
+            </div>
+            <div class="side">
+                <div class="text">Side</div>
+            </div>
+            <div class="main">
+                <div class="text">Main</div>
+            </div>
+            <div class="clr"></div>
+            <div class="footer">
+                <div class="text">Footer</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
